@@ -24,6 +24,7 @@ markdown_extensions:
   - abbr
 
 nav:
+  - index.md
   - Language Reference Guide:
     - Symbols:
       - language-reference-guide/symbols/language-elements.md
