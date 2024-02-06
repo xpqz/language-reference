@@ -1,0 +1,783 @@
+
+site_name: Language Reference
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.sections
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - abbr
+
+nav:
+  - Language Reference Guide:
+    - Symbols:
+      - language-reference-guide/symbols/language-elements.md
+      - Brackets: language-reference-guide/symbols/brackets.md
+      - language-reference-guide/symbols/special-symbols.md
+    - Primitive Functions:
+      - language-reference-guide/primitive-functions/primitive-functions-table.md
+      - language-reference-guide/primitive-functions/scalar-functions.md
+      - language-reference-guide/primitive-functions/mixed-functions.md
+      - language-reference-guide/primitive-functions/notes.md
+      - Scalar Monadic Functions:
+        - Negative: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/negative.md
+        - Direction (Signum): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/direction.md
+        - Reciprocal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reciprocal.md
+        - Magnitude: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/magnitude.md
+        - Floor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/floor.md
+        - Ceiling: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ceiling.md
+        - Exponential: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/exponential.md
+        - Natural Logarithm: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/natural-logarithm.md
+        - Pi Times: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/pi-times.md
+        - Factorial: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/factorial.md
+        - Not: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not.md
+        - Roll: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/roll.md
+        - Type: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/type.md
+      - Scalar Dyadic Arithmetic Functions:
+        - Add: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/add.md
+        - Subtract: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/subtract.md
+        - Multiply: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/multiply.md
+        - Divide: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/divide.md
+        - Residue: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/residue.md
+        - Minimum: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/minimum.md
+        - Maximum: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/maximum.md
+        - Power: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/power.md
+        - Logarithm: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/logarithm.md
+        - Binomial: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/binomial.md
+      - Scalar Dyadic Logical Functions:
+        - And, Lowest Common Multiple: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/and-lowest-common-multiple.md
+        - Or, Greatest Common Divisor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/or-greatest-common-divisor.md
+        - Nand: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nand.md
+        - Nor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nor.md
+        - Less: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/less.md
+        - Less Or Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/less-or-equal.md
+        - Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/equal.md
+        - Greater Or Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/greater-or-equal.md
+        - Greater: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/greater.md
+        - Not Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not-equal.md
+      - Circular: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/circular.md
+      - Non-Scalar Monadic Structural Functions:
+        - Shape: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/shape.md
+        - Ravel: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ravel.md
+        - Ravel with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ravel-with-axes.md
+        - Reverse: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reverse.md
+        - Table: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/table.md
+        - Tally: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/tally.md
+        - Transpose (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/transpose-monadic.md
+        - Mix: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/mix.md
+        - Split: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/split.md
+        - Enclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enclose.md
+        - Enclose with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enclose-with-axes.md
+        - Nest: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nest.md
+        - Format (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/format-monadic.md
+        - Depth: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/depth.md
+        - Enlist: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enlist.md
+      - Non-Scalar Dyadic Structural Functions:
+        - Reshape: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reshape.md
+        - Catenate/Laminate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/catenate-laminate.md
+        - Rotate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/rotate.md
+        - Transpose (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/transpose-dyadic.md
+        - Partitioned Enclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/partitioned-enclose.md
+        - Partition: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/partition.md
+        - Format (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/format-dyadic.md
+      - Non-Scalar Selection Functions:
+        - Right: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/right.md
+        - Same: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/same.md
+        - Left: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/left.md
+        - Disclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/disclose.md
+        - Unique: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/unique.md
+        - Unique Mask: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/unique-mask.md
+        - Pick: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/pick.md
+        - Take: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/take.md
+        - Take with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/take-with-axes.md
+        - Drop: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/drop.md
+        - Drop with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/drop-with-axes.md
+        - Replicate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/replicate.md
+        - Expand: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/expand.md
+        - Excluding: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/excluding.md
+        - Intersection: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/intersection.md
+        - Union: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/union.md
+      - Non-Scalar Selector Functions:
+        - Index Generator: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-generator.md
+        - Grade Up (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-up-monadic.md
+        - Grade Down (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-down-monadic.md
+        - Index: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index.md
+        - Index with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-with-axes.md
+        - Index Of: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-of.md
+        - Interval Index: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/interval-index.md
+        - Where: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/where.md
+        - Membership: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/membership.md
+        - Find: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/find.md
+        - Grade Up (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-up-dyadic.md
+        - Grade Down (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-down-dyadic.md
+        - Deal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/deal.md
+        - Match: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/match.md
+        - Not Match: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not-match.md
+      - Non-Scalar Computational Functions:
+        - Zilde: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/zilde.md
+        - Abort: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/abort.md
+        - Branch: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/branch.md
+        - Execute: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/execute.md
+        - Matrix Inverse: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/matrix-inverse.md
+        - Decode: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/decode.md
+        - Encode: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/encode.md
+        - Matrix Divide: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/matrix-divide.md
+      - Primitive Functions (A-Z):
+        - language-reference-guide/primitive-functions/primitive-functions-a-z/key-to-notation.md
+        - Primitive Functions (A-Z):
+          - Abort: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/abort.md
+          - Add: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/add.md
+          - And, Lowest Common Multiple: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/and-lowest-common-multiple.md
+          - Assignment: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/assignment.md
+          - Assignment (Indexed): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/assignment-indexed.md
+          - Assignment (Selective): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/assignment-selective.md
+          - Binomial: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/binomial.md
+          - Branch: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/branch.md
+          - Catenate/Laminate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/catenate-laminate.md
+          - Catenate First: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/catenate-first.md
+          - Ceiling: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ceiling.md
+          - Circular: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/circular.md
+          - Conjugate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/conjugate.md
+          - Deal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/deal.md
+          - Decode: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/decode.md
+          - Depth: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/depth.md
+          - Direction (Signum): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/direction.md
+          - Disclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/disclose.md
+          - Divide: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/divide.md
+          - Drop: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/drop.md
+          - Drop with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/drop-with-axes.md
+          - Enclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enclose.md
+          - Enclose with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enclose-with-axes.md
+          - Encode: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/encode.md
+          - Enlist: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/enlist.md
+          - Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/equal.md
+          - Excluding: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/excluding.md
+          - Execute: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/execute.md
+          - Expand: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/expand.md
+          - Expand First: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/expand-first.md
+          - Exponential: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/exponential.md
+          - Factorial: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/factorial.md
+          - Find: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/find.md
+          - First: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/first.md
+          - Floor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/floor.md
+          - Format (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/format-monadic.md
+          - Format (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/format-dyadic.md
+          - Grade Down (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-down-monadic.md
+          - Grade Down (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-down-dyadic.md
+          - Grade Up (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-up-monadic.md
+          - Grade Up (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/grade-up-dyadic.md
+          - Greater: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/greater.md
+          - Greater Or Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/greater-or-equal.md
+          - Index: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index.md
+          - Index with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-with-axes.md
+          - Index Generator: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-generator.md
+          - Index Of: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/index-of.md
+          - Indexing: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/indexing.md
+          - Intersection: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/intersection.md
+          - Interval Index: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/interval-index.md
+          - Left: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/left.md
+          - Less: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/less.md
+          - Less Or Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/less-or-equal.md
+          - Logarithm: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/logarithm.md
+          - Magnitude: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/magnitude.md
+          - Match: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/match.md
+          - Unique Mask: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/unique-mask.md
+          - Matrix Divide: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/matrix-divide.md
+          - Matrix Inverse: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/matrix-inverse.md
+          - Maximum: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/maximum.md
+          - Membership: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/membership.md
+          - Minimum: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/minimum.md
+          - Minus: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/minus.md
+          - Mix: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/mix.md
+          - Multiply: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/multiply.md
+          - Nand: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nand.md
+          - Natural Logarithm: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/natural-logarithm.md
+          - Negative: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/negative.md
+          - Nest: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nest.md
+          - Nor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/nor.md
+          - Not: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not.md
+          - Not Equal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not-equal.md
+          - Not Match: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/not-match.md
+          - Or, Greatest Common Divisor: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/or-greatest-common-divisor.md
+          - Partition: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/partition.md
+          - Partitioned Enclose: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/partitioned-enclose.md
+          - Pi Times: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/pi-times.md
+          - Pick: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/pick.md
+          - Plus: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/plus.md
+          - Power: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/power.md
+          - Ravel: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ravel.md
+          - Ravel with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/ravel-with-axes.md
+          - Reciprocal: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reciprocal.md
+          - Replicate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/replicate.md
+          - Reshape: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reshape.md
+          - Residue: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/residue.md
+          - Reverse: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reverse.md
+          - Reverse First: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/reverse-first.md
+          - Right: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/right.md
+          - Roll: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/roll.md
+          - Rotate: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/rotate.md
+          - Rotate First: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/rotate-first.md
+          - Same: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/same.md
+          - Shape: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/shape.md
+          - Split: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/split.md
+          - Subtract: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/subtract.md
+          - Table: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/table.md
+          - Take: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/take.md
+          - Take with Axes: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/take-with-axes.md
+          - Tally: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/tally.md
+          - Times: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/times.md
+          - Transpose (Monadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/transpose-monadic.md
+          - Transpose (Dyadic): language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/transpose-dyadic.md
+          - Type: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/type.md
+          - Union: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/union.md
+          - Unique: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/unique.md
+          - Where: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/where.md
+          - Without: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/without.md
+          - Zilde: language-reference-guide/primitive-functions/primitive-functions-a-z/primitive-functions-a-z/zilde.md
+    - Primitive Operators:
+      - language-reference-guide/primitive-operators/primitive-operators-table.md
+      - language-reference-guide/primitive-operators/operator-syntax.md
+      - language-reference-guide/primitive-operators/operators-summarised.md
+      - Operators A-Z:
+        - Assignment (Modified): language-reference-guide/primitive-operators/operators-a-z/assignment-modified.md
+        - Assignment (Indexed Modified): language-reference-guide/primitive-operators/operators-a-z/assignment-indexed-modified.md
+        - Assignment (Selective Modified): language-reference-guide/primitive-operators/operators-a-z/assignment-selective-modified.md
+        - At: language-reference-guide/primitive-operators/operators-a-z/at.md
+        - Atop: language-reference-guide/primitive-operators/operators-a-z/atop.md
+        - Axis (with Monadic Operand): language-reference-guide/primitive-operators/operators-a-z/axis-with-monadic-operand.md
+        - Axis (with Dyadic Operand): language-reference-guide/primitive-operators/operators-a-z/axis-with-dyadic-operand.md
+        - Beside: language-reference-guide/primitive-operators/operators-a-z/beside.md
+        - Bind: language-reference-guide/primitive-operators/operators-a-z/bind.md
+        - Commute: language-reference-guide/primitive-operators/operators-a-z/commute.md
+        - Constant: language-reference-guide/primitive-operators/operators-a-z/constant.md
+        - Each (with Monadic Operand): language-reference-guide/primitive-operators/operators-a-z/each-with-monadic-operand.md
+        - Each (with Dyadic Operand): language-reference-guide/primitive-operators/operators-a-z/each-with-dyadic-operand.md
+        - I-Beam: language-reference-guide/primitive-operators/operators-a-z/i-beam-short.md
+        - Inner Product: language-reference-guide/primitive-operators/operators-a-z/inner-product.md
+        - Key: language-reference-guide/primitive-operators/operators-a-z/key.md
+        - Outer Product: language-reference-guide/primitive-operators/operators-a-z/outer-product.md
+        - Over: language-reference-guide/primitive-operators/operators-a-z/over.md
+        - Power Operator: language-reference-guide/primitive-operators/operators-a-z/power-operator.md
+        - Rank: language-reference-guide/primitive-operators/operators-a-z/rank.md
+        - Reduce: language-reference-guide/primitive-operators/operators-a-z/reduce.md
+        - Reduce First: language-reference-guide/primitive-operators/operators-a-z/reduce-first.md
+        - Reduce N-Wise: language-reference-guide/primitive-operators/operators-a-z/reduce-n-wise.md
+        - Reduce First N-Wise: language-reference-guide/primitive-operators/operators-a-z/reduce-first-n-wise.md
+        - Scan: language-reference-guide/primitive-operators/operators-a-z/scan.md
+        - Scan First: language-reference-guide/primitive-operators/operators-a-z/scan-first.md
+        - Spawn: language-reference-guide/primitive-operators/operators-a-z/spawn.md
+        - Stencil: language-reference-guide/primitive-operators/operators-a-z/stencil.md
+        - Variant: language-reference-guide/primitive-operators/operators-a-z/variant.md
+    - The I-Beam Operator:
+      - I-Beam: language-reference-guide/the-i-beam-operator/i-beam.md
+      - A-Z:
+        - Inverted Table Index Of: language-reference-guide/the-i-beam-operator/a-z/inverted-table-index-of.md
+        - Execute Expression: language-reference-guide/the-i-beam-operator/a-z/execute-expression.md
+        - Overwrite Free Pockets: language-reference-guide/the-i-beam-operator/a-z/overwrite-free-pockets.md
+        - Canonical Representation: language-reference-guide/the-i-beam-operator/a-z/canonical-representation.md
+        - Unsqueezed Type: language-reference-guide/the-i-beam-operator/a-z/unsqueezed-type.md
+        - Syntax Colouring: language-reference-guide/the-i-beam-operator/a-z/syntax-colouring.md
+        - Sample Probability Distribution: language-reference-guide/the-i-beam-operator/a-z/sample-probability-distribution.md
+        - Compress Vector of Short Integers: language-reference-guide/the-i-beam-operator/a-z/compress-vector-of-short-integers.md
+        - Serialise/Deserialise Array: language-reference-guide/the-i-beam-operator/a-z/serialise-array.md
+        - Compiler Control: language-reference-guide/the-i-beam-operator/a-z/compiler-control.md
+        - Trap Control: language-reference-guide/the-i-beam-operator/a-z/trap-control.md
+        - Case Convert: language-reference-guide/the-i-beam-operator/a-z/case-convert.md
+        - Called Monadically: language-reference-guide/the-i-beam-operator/a-z/called-monadically.md
+        - Loaded Libraries: language-reference-guide/the-i-beam-operator/a-z/loaded-libraries.md
+        - Number of Threads: language-reference-guide/the-i-beam-operator/a-z/number-of-threads.md
+        - Parallel Execution Threshold: language-reference-guide/the-i-beam-operator/a-z/parallel-execution-threshold.md
+        - Update Function Timestamp: language-reference-guide/the-i-beam-operator/a-z/update-function-timestamp.md
+        - Hash Array: language-reference-guide/the-i-beam-operator/a-z/hash-array.md
+        - Memory Manager Statistics: language-reference-guide/the-i-beam-operator/a-z/memory-manager-statistics.md
+        - Specify Workspace Available: language-reference-guide/the-i-beam-operator/a-z/specify-workspace-available.md
+        - Update DataTable: language-reference-guide/the-i-beam-operator/a-z/update-datatable.md
+        - Read DataTable: language-reference-guide/the-i-beam-operator/a-z/read-datatable.md
+        - Remove Data Binding: language-reference-guide/the-i-beam-operator/a-z/remove-data-binding.md
+        - Create Data Binding Source: language-reference-guide/the-i-beam-operator/a-z/create-data-binding-source.md
+        - Create .NET Delegate: language-reference-guide/the-i-beam-operator/a-z/create-net-delegate.md
+        - Identify .NET Type: language-reference-guide/the-i-beam-operator/a-z/identify-net-type.md
+        - Flush Session Caption: language-reference-guide/the-i-beam-operator/a-z/flush-session-caption.md
+        - Close All Windows: language-reference-guide/the-i-beam-operator/a-z/close-all-windows.md
+        - Set Dyalog Pixel Type: language-reference-guide/the-i-beam-operator/a-z/set-dyalog-pixel-type.md
+        - Override COM Default Value: language-reference-guide/the-i-beam-operator/a-z/override-com-default-value.md
+        - Export To Memory: language-reference-guide/the-i-beam-operator/a-z/export-to-memory.md
+        - Close .NET AppDomain: language-reference-guide/the-i-beam-operator/a-z/close-net-appdomain.md
+        - Set Workspace Save Options: language-reference-guide/the-i-beam-operator/a-z/set-workspace-save-options.md
+        - Expose Root Properties: language-reference-guide/the-i-beam-operator/a-z/expose-root-properties.md
+        - Discard Thread on Exit: language-reference-guide/the-i-beam-operator/a-z/discard-thread-on-exit.md
+        - Discard Parked Threads: language-reference-guide/the-i-beam-operator/a-z/discard-parked-threads.md
+        - Mark Thread as Uninterruptible: language-reference-guide/the-i-beam-operator/a-z/mark-thread-as-uninterruptible.md
+        - Use Separate Thread For .NET: language-reference-guide/the-i-beam-operator/a-z/use-separate-thread-for-net.md
+        - Disable Component Checksum Validation: language-reference-guide/the-i-beam-operator/a-z/disable-component-checksum-validation.md
+        - Send Text to RIDE-embedded Browser: language-reference-guide/the-i-beam-operator/a-z/send-text-to-ride-embedded-browser.md
+        - Connected to the RIDE: language-reference-guide/the-i-beam-operator/a-z/connected-to-the-ride.md
+        - Manage RIDE Connections: language-reference-guide/the-i-beam-operator/a-z/manage-ride-connections.md
+        - Fork New Task: language-reference-guide/the-i-beam-operator/a-z/fork-new-task.md
+        - Change User: language-reference-guide/the-i-beam-operator/a-z/change-user.md
+        - Reap Forked Tasks: language-reference-guide/the-i-beam-operator/a-z/reap-forked-tasks.md
+        - Signal Counts: language-reference-guide/the-i-beam-operator/a-z/signal-counts.md
+        - List Loaded Files: language-reference-guide/the-i-beam-operator/a-z/list-loaded-files.md
+        - List Loaded File Objects: language-reference-guide/the-i-beam-operator/a-z/list-loaded-file-objects.md
+        - JSON Translate Name: language-reference-guide/the-i-beam-operator/a-z/json-translate-name.md
+        - Singular Value Decomposition: language-reference-guide/the-i-beam-operator/a-z/singular-value-decomposition.md
+        - Externalise Array: language-reference-guide/the-i-beam-operator/a-z/externalise-array.md
+        - Line Count: language-reference-guide/the-i-beam-operator/a-z/line-count.md
+        - language-reference-guide/the-i-beam-operator/a-z/supplementary-i-beam-functions.md
+    - System Functions:
+      - language-reference-guide/system-functions/introduction.md
+      - System Functions Categorised:
+        - language-reference-guide/system-functions/system-functions-categorised/system-functions-categorised.md
+        - System Settings:
+          - language-reference-guide/system-functions/system-functions-categorised/system-settings/system-settings.md
+          - State Settings:
+            - Comparison Tolerance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ct.md
+            - Decimal Comparison Tolerance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dct.md
+            - Division Method: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/div.md
+            - Floating-Point Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fr.md
+            - Index Origin: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/io.md
+            - Migration Level: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ml.md
+            - Print Precision: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/pp.md
+            - Random Link: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rl.md
+        - Session Information and Management:
+          - language-reference-guide/system-functions/system-functions-categorised/session-information-and-management/session-information-and-management.md
+          - Session Information and Management:
+            - Account Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ai.md
+            - Account Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/an.md
+            - Clear Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/clear.md
+            - Copy Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cy.md
+            - Delay: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dl.md
+            - Load Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/load.md
+            - Sign Off APL: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/off.md
+            - Search Path: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/path.md
+            - Save Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/save.md
+            - Timestamp: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ts.md
+        - System Constants:
+          - language-reference-guide/system-functions/system-functions-categorised/system-constants/constants.md
+          - Constants:
+            - Alphabetic Characters: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/a.md
+            - Digits: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/d.md
+            - Null Item: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/null.md
+        - Tools and Access to External Facilities:
+          - language-reference-guide/system-functions/system-functions-categorised/tools-and-access-to-external-facilities/tools-and-external-access.md
+          - Tools and Access to External Utilities:
+            - Execute Windows Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md
+            - Start Windows Auxiliary Processor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/start-windows-auxiliary-processor.md
+            - JSON Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
+            - Data Representation (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-monadic.md
+            - Data Representation (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-dyadic.md
+            - Format (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-monadic.md
+            - Format (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-dyadic.md
+            - Map File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/map.md
+            - Name Association: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
+            - Replace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/r.md
+            - Search: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/s.md
+            - Execute (UNIX) Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md
+            - Start UNIX Auxiliary Processor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/start-unix-auxiliary-processor.md
+            - Unicode Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ucs.md
+            - Using (Microsoft .NET Search Path): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/using.md
+            - Verify & Fix Input: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/vfi.md
+            - XML Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/xml.md
+        - Manipulating Functions and Operators:
+          - language-reference-guide/system-functions/system-functions-categorised/manipulating-functions-and-operators/manipulating-functions-and-operators.md
+          - Manipulating Functions and Operators:
+            - Attributes: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/at.md
+            - Canonical Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cr.md
+            - Edit Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ed.md
+            - Expunge Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ex.md
+            - Fix Definition: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fx.md
+            - Lock Definition: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lock.md
+            - Object Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/or.md
+            - Nested Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nr.md
+            - Profile Application: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/profile.md
+            - Cross References: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/refs.md
+            - Set Stop: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-stop.md
+            - Query Stop: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-stop.md
+            - Set Trace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-trace.md
+            - Query Trace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-trace.md
+            - Vector Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/vr.md
+        - Namespaces and Objects:
+          - language-reference-guide/system-functions/system-functions-categorised/namespaces-and-objects/namespaces-and-objects.md
+          - Namespaces and Objects:
+            - Base Class: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/base.md
+            - Class: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/class.md
+            - Change Space: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cs.md
+            - Display Form: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/df.md
+            - Fix Script: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fix.md
+            - Instances: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/instances.md
+            - New Instance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/new.md
+            - Namespace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ns.md
+            - Source: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/src.md
+            - This Space: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/this.md
+        - Input and Output:
+          - language-reference-guide/system-functions/system-functions-categorised/input-and-output/input-and-output.md
+          - Input/Output:
+            - Character Input/Output: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/character-input-output.md
+            - Evaluated Input/Output: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/evaluated-input-output.md
+            - Response Time Limit: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rtl.md
+        - Component Files:
+          - language-reference-guide/system-functions/system-functions-categorised/component-files/component-files.md
+          - Component Files:
+            - File Append Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fappend.md
+            - File System Available: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/favail.md
+            - File Check and Repair: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fchk.md
+            - File Copy: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fcopy.md
+            - File Create: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fcreate.md
+            - File Drop Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fdrop.md
+            - File Erase: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ferase.md
+            - File History: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fhist.md
+            - File Hold: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fhold.md
+            - Component File Library: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/flib.md
+            - File Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fnames.md
+            - File Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fnums.md
+            - File Properties: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fprops.md
+            - File Read Access: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frdac.md
+            - File Read Component Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frdci.md
+            - File Read Components: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fread.md
+            - File Rename: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frename.md
+            - File Replace Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/freplace.md
+            - File Resize: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fresize.md
+            - File Size: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fsize.md
+            - File Set Access: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fstac.md
+            - File Share Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fstie.md
+            - Exclusive File Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ftie.md
+            - File Untie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/funtie.md
+        - Native Files:
+          - language-reference-guide/system-functions/system-functions-categorised/native-files/native-files.md
+          - Native Files:
+            - File Name Parts: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nparts.md
+            - Make Directory: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/mkdir.md
+            - Native File Append: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nappend.md
+            - Native File Create: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ncreate.md
+            - Native File Move: language-reference-guide/system-functions/system-functions-categorised/native-files/native-files/nmove.md
+            - Native File Delete: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ndelete.md
+            - Native File Erase: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nerase.md
+            - Native File Exists: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nexists.md
+            - Read Text File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nget.md
+            - Native File Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ninfo.md
+            - Native File Lock: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nlock.md
+            - Native File Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nnames.md
+            - Native File Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nnums.md
+            - File Name Parts: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nparts.md
+            - Write Text File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nput.md
+            - Native File Read: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nread.md
+            - Native File Rename: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nrename.md
+            - Native File Replace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nreplace.md
+            - Native File Resize: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nresize.md
+            - Native File Size: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nsize.md
+            - Native File Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ntie.md
+            - Native File Untie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nuntie.md
+            - Native File Translate: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nxlate.md
+        - Threads:
+          - language-reference-guide/system-functions/system-functions-categorised/threads/threads.md
+          - Threads:
+            - Thread Child Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tcnums.md
+            - Current Thread Identity: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tid.md
+            - Kill Thread: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tkill.md
+            - Current Thread Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tname.md
+            - Thread Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tnums.md
+            - Wait for Threads to Terminate: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tsync.md
+        - Synchronisation:
+          - language-reference-guide/system-functions/system-functions-categorised/synchronisation/synchronisation.md
+          - Synchronisation:
+            - Get Tokens: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tget.md
+            - Kill Thread: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tkill.md
+            - Token Pool: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tpool.md
+            - Put Tokens: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tput.md
+            - Token Requests: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/treq.md
+        - Error Handling:
+          - language-reference-guide/system-functions/system-functions-categorised/error-handling/error-handling.md
+          - Error Handling:
+            - Event Number: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/en.md
+            - Extended Diagnostic Message: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dmx.md
+            - Event Message: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/em.md
+            - Exception: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/exception.md
+            - Signal Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/signal.md
+            - Trap Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/trap.md
+        - Stack and Workspace:
+          - language-reference-guide/system-functions/system-functions-categorised/stack-and-workspace/stack-and-workspace.md
+          - Stack and Workspace Information:
+            - Line Count: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lc.md
+            - Latent Expression: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lx.md
+            - Name Classification: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nc.md
+            - Name List: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nl.md
+            - Namespace Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nsi.md
+            - Space Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rsi.md
+            - State Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/si.md
+            - Shadow Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/shadow.md
+            - Size of Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/size.md
+            - State Indicator Stack: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/stack.md
+            - State of Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/state.md
+            - Workspace Available: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wa.md
+            - Workspace Identification: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wsid.md
+            - Extended State Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/xsi.md
+        - Shared Variables:
+          - language-reference-guide/system-functions/system-functions-categorised/shared-variables/shared-variables.md
+          - Shared Variables:
+            - Query Access Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-access-control.md
+            - Set Access Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-access-control.md
+            - Shared Variable Offer: language-reference-guide/system-functions/system-functions-categorised/shared-variables/shared-variables/svo.md
+            - Shared Variable Offer: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/shared-variable-offer.md
+            - Query Degree of Coupling: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-degree-of-coupling.md
+            - Shared Variable Query: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svq.md
+            - Shared Variable Retract Offer: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svr.md
+            - Shared Variable State: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svs.md
+        - GUI and COM Support:
+          - language-reference-guide/system-functions/system-functions-categorised/gui-and-com-support/gui-and-com-support.md
+          - GUI and COM Support:
+            - Dequeue Events: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dq.md
+            - Export Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/export.md
+            - Enqueue Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nq.md
+            - Window Create Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wc.md
+            - Window Get Property: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wg.md
+            - Window Child Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wn.md
+            - Window Set Property: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ws.md
+            - Window Expose: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wx.md
+        - Miscellaneous:
+          - language-reference-guide/system-functions/system-functions-categorised/miscellaneous/miscellaneous.md
+          - Miscellaneous:
+            - Underscored Alphabetic Characters: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/underscored-alphabetic-characters.md
+            - Atomic Vector: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/av.md
+            - Atomic Vector - Unicode: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/avu.md
+            - Key Label: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/kl.md
+            - Program Function Key: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/pfkey.md
+            - Screen Dimensions: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sd.md
+            - Screen Map: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sm.md
+            - Screen Read: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sr.md
+            - Variant: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/opt.md
+            - Terminal Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tc.md
+            - Set External Variable: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-external-variable.md
+            - Query External Variable: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-external-variable.md
+      - language-reference-guide/system-functions/system-variables.md
+      - System Functions (A-Z):
+        - language-reference-guide/system-functions/system-functions-a-z/system-functions-and-variables-colwise.md
+        - System Functions (A-Z):
+          - Character Input/Output: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/character-input-output.md
+          - Evaluated Input/Output: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/evaluated-input-output.md
+          - Underscored Alphabetic Characters: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/underscored-alphabetic-characters.md
+          - Alphabetic Characters: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/a.md
+          - Account Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ai.md
+          - Account Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/an.md
+          - Arbitrary Input: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/arbin.md
+          - Arbitrary Output: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/arbout.md
+          - Attributes: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/at.md
+          - Allocate Token Range: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/talloc.md
+          - Atomic Vector: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/av.md
+          - Atomic Vector - Unicode: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/avu.md
+          - Base Class: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/base.md
+          - Class: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/class.md
+          - Clear Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/clear.md
+          - Execute Windows Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-windows-command.md
+          - Start Windows Auxiliary Processor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/start-windows-auxiliary-processor.md
+          - Canonical Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cr.md
+          - Change Space: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cs.md
+          - Comma Separated Values: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/csv.md
+          - Comparison Tolerance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ct.md
+          - Copy Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/cy.md
+          - Digits: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/d.md
+          - Decimal Comparison Tolerance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dct.md
+          - Display Form: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/df.md
+          - Division Method: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/div.md
+          - Delay: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dl.md
+          - Diagnostic Message: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dm.md
+          - Extended Diagnostic Message: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dmx.md
+          - Dequeue Events: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/dq.md
+          - Data Representation (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-monadic.md
+          - Data Representation (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/data-representation-dyadic.md
+          - Edit Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ed.md
+          - Event Message: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/em.md
+          - Event Number: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/en.md
+          - Exception: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/exception.md
+          - Expunge Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ex.md
+          - Export Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/export.md
+          - File Append Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fappend.md
+          - File System Available: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/favail.md
+          - File Check and Repair: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fchk.md
+          - File Copy: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fcopy.md
+          - File Create: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fcreate.md
+          - File Drop Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fdrop.md
+          - File Erase: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ferase.md
+          - File History: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fhist.md
+          - File Hold: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fhold.md
+          - Fix Script: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fix.md
+          - Component File Library: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/flib.md
+          - Format (Monadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-monadic.md
+          - Format (Dyadic): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/format-dyadic.md
+          - File Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fnames.md
+          - File Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fnums.md
+          - File Properties: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fprops.md
+          - Floating-Point Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fr.md
+          - File Read Access: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frdac.md
+          - File Read Component Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frdci.md
+          - File Read Components: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fread.md
+          - File Rename: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/frename.md
+          - File Replace Component: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/freplace.md
+          - File Resize: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fresize.md
+          - File Size: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fsize.md
+          - File Set Access: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fstac.md
+          - File Share Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fstie.md
+          - Exclusive File Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ftie.md
+          - File Untie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/funtie.md
+          - Fix Definition: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/fx.md
+          - Instances: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/instances.md
+          - Index Origin: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/io.md
+          - JSON Convert:
+            - JSON Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json.md
+            - language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/json-convert/json-name-manglling.md
+          - Key Label: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/kl.md
+          - Line Count: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lc.md
+          - Load Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/load.md
+          - Lock Definition: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lock.md
+          - Latent Expression: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/lx.md
+          - Map File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/map.md
+          - Make Directory: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/mkdir.md
+          - Migration Level: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ml.md
+          - Set Monitor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-monitor.md
+          - Query Monitor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-monitor.md
+          - Name Association: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/na.md
+          - Native File Append: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nappend.md
+          - Name Classification: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nc.md
+          - Native File Create: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ncreate.md
+          - Native File Delete: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ndelete.md
+          - Native File Erase: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nerase.md
+          - New Instance: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/new.md
+          - Native File Exists: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nexists.md
+          - Read Text File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nget.md
+          - Native File Information: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ninfo.md
+          - Name List: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nl.md
+          - Native File Lock: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nlock.md
+          - Native File Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nnames.md
+          - Native File Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nnums.md
+          - File Name Parts: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nparts.md
+          - Write Text File: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nput.md
+          - Enqueue Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nq.md
+          - Nested Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nr.md
+          - Native File Read: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nread.md
+          - Native File Rename: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nrename.md
+          - Native File Replace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nreplace.md
+          - Native File Resize: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nresize.md
+          - Namespace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ns.md
+          - Namespace Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nsi.md
+          - Native File Size: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nsize.md
+          - Native File Tie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ntie.md
+          - Null Item: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/null.md
+          - Native File Untie: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nuntie.md
+          - Native File Translate: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/nxlate.md
+          - Sign Off APL: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/off.md
+          - Variant: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/opt.md
+          - Object Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/or.md
+          - Search Path: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/path.md
+          - Program Function Key: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/pfkey.md
+          - Print Precision: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/pp.md
+          - Profile Application: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/profile.md
+          - Print Width: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/pw.md
+          - Replace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/r.md
+          - Cross References: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/refs.md
+          - Random Link: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rl.md
+          - Space Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rsi.md
+          - Response Time Limit: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/rtl.md
+          - Search: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/s.md
+          - Save Workspace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/save.md
+          - Screen Dimensions: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sd.md
+          - Session Namespace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/se.md
+          - Execute (UNIX) Command: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/execute-unix-command.md
+          - Start UNIX Auxiliary Processor: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/start-unix-auxiliary-processor.md
+          - Shadow Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/shadow.md
+          - State Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/si.md
+          - Signal Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/signal.md
+          - Size of Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/size.md
+          - Screen Map: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sm.md
+          - Screen Read: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/sr.md
+          - Source: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/src.md
+          - State Indicator Stack: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/stack.md
+          - State of Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/state.md
+          - Set Stop: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-stop.md
+          - Query Stop: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-stop.md
+          - Set Access Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-access-control.md
+          - Query Access Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-access-control.md
+          - Shared Variable Offer: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/shared-variable-offer.md
+          - Query Degree of Coupling: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-degree-of-coupling.md
+          - Shared Variable Query: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svq.md
+          - Shared Variable Retract Offer: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svr.md
+          - Shared Variable State: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/svs.md
+          - Terminal Control: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tc.md
+          - Thread Child Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tcnums.md
+          - Get Tokens: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tget.md
+          - This Space: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/this.md
+          - Current Thread Identity: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tid.md
+          - Kill Thread: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tkill.md
+          - Current Thread Name: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tname.md
+          - Thread Numbers: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tnums.md
+          - Token Pool: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tpool.md
+          - Put Tokens: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tput.md
+          - Set Trace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-trace.md
+          - Query Trace: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-trace.md
+          - Trap Event: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/trap.md
+          - Token Requests: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/treq.md
+          - Timestamp: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ts.md
+          - Wait for Threads to Terminate: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/tsync.md
+          - Unicode Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ucs.md
+          - Using (Microsoft .NET Search Path): language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/using.md
+          - Vector Representation: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/vr.md
+          - Verify & Fix Input: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/vfi.md
+          - Workspace Available: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wa.md
+          - Window Create Object: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wc.md
+          - Window Get Property: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wg.md
+          - Window Child Names: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wn.md
+          - Window Set Property: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/ws.md
+          - Workspace Identification: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wsid.md
+          - Window Expose: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/wx.md
+          - XML Convert: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/xml.md
+          - Extended State Indicator: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/xsi.md
+          - Set External Variable: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/set-external-variable.md
+          - Query External Variable: language-reference-guide/system-functions/system-functions-a-z/system-functions-a-z/query-external-variable.md
+    - System Commands:
+      - language-reference-guide/system-commands/introduction.md
+      - System Commands (A-Z):
+        - List Classes: language-reference-guide/system-commands/system-commands-a-z/classes.md
+        - Clear Workspace: language-reference-guide/system-commands/system-commands-a-z/clear.md
+        - Windows Command Processor: language-reference-guide/system-commands/system-commands-a-z/cmd.md
+        - Save Continuation: language-reference-guide/system-commands/system-commands-a-z/continue.md
+        - Copy Workspace: language-reference-guide/system-commands/system-commands-a-z/copy.md
+        - Change Space: language-reference-guide/system-commands/system-commands-a-z/cs.md
+        - Drop Workspace: language-reference-guide/system-commands/system-commands-a-z/drop.md
+        - Edit Object: language-reference-guide/system-commands/system-commands-a-z/ed.md
+        - Erase Object: language-reference-guide/system-commands/system-commands-a-z/erase.md
+        - List Events: language-reference-guide/system-commands/system-commands-a-z/events.md
+        - List Global Defined Functions: language-reference-guide/system-commands/system-commands-a-z/fns.md
+        - Display Held Tokens: language-reference-guide/system-commands/system-commands-a-z/holds.md
+        - List Workspace Library: language-reference-guide/system-commands/system-commands-a-z/lib.md
+        - Load Workspace: language-reference-guide/system-commands/system-commands-a-z/load.md
+        - List Methods: language-reference-guide/system-commands/system-commands-a-z/methods.md
+        - Create Namespace: language-reference-guide/system-commands/system-commands-a-z/ns.md
+        - List Global Namespaces: language-reference-guide/system-commands/system-commands-a-z/objects.md
+        - List Global Namespaces: language-reference-guide/system-commands/system-commands-a-z/obs.md
+        - Sign Off APL: language-reference-guide/system-commands/system-commands-a-z/off.md
+        - List Global Defined Operators: language-reference-guide/system-commands/system-commands-a-z/ops.md
+        - Protected Copy: language-reference-guide/system-commands/system-commands-a-z/pcopy.md
+        - List Properties: language-reference-guide/system-commands/system-commands-a-z/props.md
+        - Reset State Indicator: language-reference-guide/system-commands/system-commands-a-z/reset.md
+        - Save Workspace: language-reference-guide/system-commands/system-commands-a-z/save.md
+        - Execute (UNIX) Command: language-reference-guide/system-commands/system-commands-a-z/sh.md
+        - State Indicator: language-reference-guide/system-commands/system-commands-a-z/si.md
+        - Clear State Indicator: language-reference-guide/system-commands/system-commands-a-z/sic.md
+        - State Indicator & Name List: language-reference-guide/system-commands/system-commands-a-z/sinl.md
+        - Thread Identity: language-reference-guide/system-commands/system-commands-a-z/tid.md
+        - List Global Defined Variables: language-reference-guide/system-commands/system-commands-a-z/vars.md
+        - Workspace Identification: language-reference-guide/system-commands/system-commands-a-z/wsid.md
+        - Load without Latent Expression: language-reference-guide/system-commands/system-commands-a-z/xload.md
+    - PCRE Specifications:
+      - language-reference-guide/pcre-specifications/pcre-overview.md
+      - language-reference-guide/pcre-specifications/pcre-regular-expression-syntax-summary.md
+      - language-reference-guide/pcre-specifications/pcre-regular-expression-details.md
